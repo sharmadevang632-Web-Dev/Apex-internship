@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive Frontend Learning Hub: Demonstrating HTML, CSS Grid/Flexbox, and Javascript DOM Manipulation.">
+  <title>Frontend Development Learning Hub</title>
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header class="navbar-header" id="navbar">
+    <nav class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span class="logo-text">Devang<span>Hub</span></span>
+      </a>  
+
+    
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#todo" class="nav-link">To-Do List</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+    
+      <div class="nav-right">
+    
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        
+        <button class="hamburger-menu" id="hamburger" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  
+  <main>
+    
+    
+    <section id="home" class="hero-section">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge">📚 Learning Project – DOM & CSS Showcase</div>
+          <h1 class="hero-title">Mastering modern front-end web design</h1>
+         <p class="hero-description">
+  Demonstrating modern front‑end techniques with CSS Grid and Flexbox, efficient client‑side JavaScript validations, dynamic DOM manipulation, and optimized state management.
+  </p>
+          <div class="hero-actions">
+            <a href="#todo" class="btn btn-primary">Try To-Do App</a>
+            <a href="#gallery" class="btn btn-secondary">Explore Gallery</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="floating-card tech-card-html">
+            <div class="card-glow"></div>
+            <span class="card-icon">HTML5</span>
+            <h4>Semantic Structure</h4>
+          </div>
+          <div class="floating-card tech-card-css">
+            <div class="card-glow"></div>
+            <span class="card-icon">CSS3</span>
+            <h4>Flexbox &amp; Grid</h4>
+          </div>
+          <div class="floating-card tech-card-js">
+            <div class="card-glow"></div>
+            <span class="card-icon">JS6</span>
+            <h4>DOM &amp; Events</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="about" class="about-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Overview</span>
+          <h2 class="section-title">Layout & Structure Capabilities</h2>
+          <p class="section-subtitle">This dashboard displays responsive cards arranged using robust CSS Grid models, responding beautifully to any screen dimensions.</p>
+        </div>
+
+       
+        <div class="features-grid">
+          <div class="grid-card">
+            <div class="grid-card-num">01</div>
+            <h3>Responsive Flexbox Nav</h3>
+            <p>A fully sticky navigation bar that manages links and structural alignment via Flexbox, translating into a seamless hamburger panel on small devices.</p>
+            <div class="card-tag">CSS Flexbox</div>
+          </div>
+          <div class="grid-card">
+            <div class="grid-card-num">02</div>
+            <h3>Bespoke Form & Validation</h3>
+            <p>An interactive, styled HTML form that leverages advanced CSS selector focus states combined with active DOM input parsing to display inline errors.</p>
+            <div class="card-tag">JS Validation</div>
+          </div>
+          <div class="grid-card">
+            <div class="grid-card-num">03</div>
+            <h3>Dynamic DOM Task List</h3>
+            <p>An intermediate task management widget showcasing JavaScript dynamic element creation, event delegation, keyframe state transitions, and persistent storage.</p>
+            <div class="card-tag">DOM Manipulation</div>
+          </div>
+          <div class="grid-card">
+            <div class="grid-card-num">04</div>
+            <h3>Lightbox Media Gallery</h3>
+            <p>A CSS Grid-driven image matrix that dynamically filters image nodes, allows custom user URL additions, and fires a responsive lightbox modal overlay.</p>
+            <div class="card-tag">CSS Grid &amp; Modal</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <section id="todo" class="todo-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Widget</span>
+          <h2 class="section-title">Dynamic Task Manager</h2>
+          <p class="section-subtitle">Manipulate the DOM dynamically by building, filtering, completing, and deleting tasks. Data persists seamlessly via LocalStorage.</p>
+        </div>
+
+        <div class="todo-wrapper glass-panel">
+         
+          <div class="todo-input-row">
+            <div class="input-group">
+              <input type="text" id="todo-input" placeholder="What task needs to be completed?" aria-label="New Task Input">
+              <span class="input-focus-line"></span>
+            </div>
+            <select id="todo-category" aria-label="Task Category">
+              <option value="Work">💼 Work</option>
+              <option value="Personal">🏠 Personal</option>
+              <option value="Study">📚 Study</option>
+              <option value="Urgent">🔥 Urgent</option>
+            </select>
+            <button id="todo-add-btn" class="btn btn-primary btn-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              <span>Add Task</span>
+            </button>
+          </div>
+
+          
+          <div class="todo-toolbar">
+            <div class="todo-stats">
+              <span id="todo-count">0 tasks remaining</span>
+            </div>
+            <div class="todo-filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="active">Active</button>
+              <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+            <button id="todo-clear-completed" class="btn-clear-link">Clear Completed</button>
+          </div>
+
+         
+          <ul id="todo-list" class="todo-list">
+           
+          </ul>
+
+          <div id="todo-empty-state" class="todo-empty-state">
+            <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <p>All caught up! Create a task above to begin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Media Grid</span>
+          <h2 class="section-title">Responsive Lightbox Gallery</h2>
+          <p class="section-subtitle">A fluid CSS Grid layout showcasing categories, real-time live search, interactive favoriting, and custom user photo uploads.</p>
+        </div>
+
+       
+        <div class="gallery-controls-bar">
+       
+          <div class="search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="gallery-search" placeholder="Search gallery by tags or titles..." aria-label="Search Gallery">
+          </div>
+
+         
+          <div class="gallery-filters" id="gallery-filters">
+            <button class="gallery-filter-btn active" data-gallery-filter="all">All Photos</button>
+            <button class="gallery-filter-btn" data-gallery-filter="nature">Nature</button>
+            <button class="gallery-filter-btn" data-gallery-filter="tech">Tech</button>
+            <button class="gallery-filter-btn" data-gallery-filter="design">Design</button>
+            <button class="gallery-filter-btn" data-gallery-filter="favorites">❤️ Favorites</button>
+          </div>
+
+          <button id="toggle-upload-form-btn" class="btn btn-secondary btn-icon">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            <span>Add Custom Image</span>
+          </button>
+        </div>
+
+       
+        <div id="image-upload-panel" class="upload-panel glass-panel hidden">
+          <h3 class="panel-title">Add Image to Gallery</h3>
+          <form id="image-upload-form" class="upload-form">
+            <div class="form-row">
+              <div class="form-group flex-1">
+                <label for="img-url">Image URL</label>
+                <input type="url" id="img-url" placeholder="https://images.unsplash.com/photo-..." required>
+              </div>
+              <div class="form-group flex-1">
+                <label for="img-title">Title / Name</label>
+                <input type="text" id="img-title" placeholder="Misty Pine Forest" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group flex-1">
+                <label for="img-category">Category</label>
+                <select id="img-category">
+                  <option value="nature">Nature</option>
+                  <option value="tech">Tech</option>
+                  <option value="design">Design</option>
+                </select>
+              </div>
+              <div class="form-group flex-1">
+                <label for="img-tags">Tags (comma-separated)</label>
+                <input type="text" id="img-tags" placeholder="green, wilderness, trees">
+              </div>
+            </div>
+            <div class="form-actions-right">
+              <button type="button" id="cancel-upload-btn" class="btn btn-secondary">Cancel</button>
+              <button type="submit" class="btn btn-primary">Insert Image</button>
+            </div>
+          </form>
+        </div>
+
+        
+        <div class="gallery-grid" id="gallery-grid">
+         
+        </div>
+
+      
+        <div id="gallery-empty-state" class="gallery-empty-state hidden">
+          <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+            <polyline points="21 15 16 10 5 21"></polyline>
+          </svg>
+          <p>No matching photos found in the collection.</p>
+        </div>
+      </div>
+    </section>
+
+   
+    <section id="contact" class="contact-section section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Interactive Contact Terminal</h2>
+          <p class="section-subtitle">Submit the form to test live JS validation triggers, regular expression assertions, and dynamic feedback layouts.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <div class="contact-info-panel glass-panel">
+            <h3 class="info-title">Developer Contact Card</h3>
+            <p class="info-desc">Feel free to test structural edge cases on the form. All inputs are monitored in real time and validated on submit.</p>
+            
+            <div class="info-details">
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h5>Direct Email</h5>
+                  <p>sandbox@devanghub.local</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h5>Current Host</h5>
+                  <p>Local Sandbox Env</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h5>Client Validation</h5>
+                  <p>Strict Regex Active</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="contact-form-panel glass-panel">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+              
+                <div class="form-group flex-1">
+                  <label for="contact-name" class="form-label">Full Name</label>
+                  <div class="input-wrapper">
+                    <input type="text" id="contact-name" class="form-input" placeholder="e.g. John Doe">
+                    <span class="focus-border"></span>
+                  </div>
+                  <span class="error-message" id="error-name">Full Name is a required field.</span>
+                </div>
+                
+               
+                <div class="form-group flex-1">
+                  <label for="contact-email" class="form-label">Email Address</label>
+                  <div class="input-wrapper">
+                    <input type="email" id="contact-email" class="form-input" placeholder="e.g. john@example.com">
+                    <span class="focus-border"></span>
+                  </div>
+                  <span class="error-message" id="error-email">Please provide a valid email format.</span>
+                </div>
+              </div>
+
+           
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <div class="input-wrapper">
+                  <input type="text" id="contact-subject" class="form-input" placeholder="e.g. Dynamic DOM inquiry">
+                  <span class="focus-border"></span>
+                </div>
+                <span class="error-message" id="error-subject">Subject is a required field.</span>
+              </div>
+
+            
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message Content</label>
+                <div class="input-wrapper">
+                  <textarea id="contact-message" class="form-textarea" rows="5" placeholder="Write your validation testing content here..."></textarea>
+                  <span class="focus-border"></span>
+                </div>
+                <span class="error-message" id="error-message">Message text must not be empty.</span>
+              </div>
+
+              
+              <button type="submit" class="btn btn-primary btn-full flex-center">
+                <span>Dispatch Message</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="submit-arrow-icon">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+ 
+  <div id="lightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image Lightbox Viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous Image">&#10094;</button>
+    
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Fullscreen Lightbox Image Preview">
+      <div class="lightbox-caption">
+        <h4 id="lightbox-title">Image Title</h4>
+        <span id="lightbox-category">Category</span>
+      </div>
+    </div>
+
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next Image">&#10095;</button>
+  </div>
+
+ 
+  <div id="toast" class="toast-notification hidden" role="status">
+    <div class="toast-icon success-toast-icon">
+      <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+    <div class="toast-body">
+      <h4 class="toast-title">Validation Success!</h4>
+      <p class="toast-message">Your contact message has been processed successfully.</p>
+    </div>
+  </div>
+
+ 
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="nav-logo">
+          <span class="logo-icon">&lt;/&gt;</span>
+          <span class="logo-text">Devang<span>Hub</span></span>
+        </div>
+        <p>A beautifully responsive web workspace for mastering and testing custom HTML elements, CSS variables, complex layouts, and dynamic DOM engines.</p>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#todo">Task Manager</a></li>
+          <li><a href="#gallery">Media Grid</a></li>
+          <li><a href="#contact">Terminal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-socials-group">
+        <h4>Connect &amp; Learn</h4>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="GitHub Developer Page">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Twitter Sandbox Account">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+            </svg>
+          </a>
+        </div>
+        <p class="copyright-text">&copy; 2026 DevangHub Sandbox. Built with pure Vanilla Web APIs.</p>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
